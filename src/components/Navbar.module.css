@@ -1,0 +1,138 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+.navContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #fff;
+    cursor: pointer;
+}
+
+.logoIcon {
+    color: var(--accent-gold);
+    font-size: 2rem;
+    filter: drop-shadow(0 0 10px rgba(255, 215, 0, 0.5));
+}
+
+.navLinks {
+    display: flex;
+    gap: 2.5rem;
+    align-items: center;
+}
+
+.navLink {
+    color: var(--text-light);
+    font-weight: 600;
+    position: relative;
+    font-size: 1.1rem;
+}
+
+.navLink::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: -8px;
+    right: 0;
+    background-color: var(--accent-gold);
+    border-radius: 2px;
+    transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navLink:hover {
+    color: #fff;
+}
+
+.navLink:hover::after {
+    width: 100%;
+}
+
+.ctaBtn {
+    background: var(--accent-gold);
+    color: var(--primary-dark);
+    padding: 0.8rem 1.8rem;
+    border-radius: 50px;
+    font-weight: 800;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.ctaBtn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(255, 215, 0, 0.3);
+}
+
+.mobileMenuBtn {
+    display: none;
+    font-size: 2rem;
+    color: var(--text-light);
+    background: none;
+    cursor: pointer;
+}
+
+/* Mobile Menu Overlay */
+.mobileMenu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(10, 25, 47, 0.98);
+    backdrop-filter: blur(20px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    z-index: 999;
+    transform: translateX(-100%);
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobileMenuOpen {
+    transform: translateX(0);
+}
+
+.mobileLink {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-light);
+}
+
+.mobileLink:hover {
+    color: var(--accent-gold);
+}
+
+@media (max-width: 900px) {
+    .navLinks {
+        display: none;
+    }
+
+    .ctaBtn {
+        display: none;
+        /* Hide standard CTA in header, maybe put in menu */
+    }
+
+    .mobileMenuBtn {
+        display: block;
+    }
+}

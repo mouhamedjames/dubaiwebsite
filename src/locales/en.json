@@ -1,0 +1,46 @@
+{
+    "hero": {
+        "company": "Al-Barq Design & Development",
+        "title": "Pioneering the Digital Future",
+        "subtitle": "In a world moving at light speed, Al-Barq is your premier technical partner. Digital creativity and technical expertise meet here to turn your ideas into dazzling reality.",
+        "cta_primary": "Start Your Project",
+        "cta_secondary": "Contact Us"
+    },
+    "nav": {
+        "home": "Home",
+        "about": "About Us",
+        "services": "Services",
+        "faq": "FAQ",
+        "contact": "Contact",
+        "quote": "Get a Quote"
+    },
+    "about": {
+        "title": "About Us",
+        "heading": "Your Partners in Digital Success",
+        "desc": "We are not just a software agency, but a laboratory for digital creativity, where deep technical expertise meets innovative artistic vision.",
+        "vision_title": "Our Vision",
+        "vision_desc": "To be the first choice for ambitious companies in the UAE, by providing solutions that combine artistic creativity and technical excellence.",
+        "why_title": "Why Al-Barq?",
+        "why_desc": "Because we believe every idea deserves to come to light. We commit to speed, precision, and aesthetics in every line of code we write."
+    },
+    "services": {
+        "title": "Our Services",
+        "heading": "Integrated Solutions for Your Growth",
+        "web_dev": "Web Development",
+        "web_dev_desc": "Fast, secure, and responsive websites using the latest technologies.",
+        "ui_ux": "UI/UX Design",
+        "ui_ux_desc": "Modern user interfaces focused on user experience and aesthetic design.",
+        "mobile_app": "Mobile Apps",
+        "mobile_app_desc": "Professional iOS and Android apps serving your project goals.",
+        "digital_marketing": "Digital Marketing",
+        "digital_marketing_desc": "Strategic marketing plans to increase sales and reach your target audience.",
+        "ecommerce": "E-Commerce",
+        "ecommerce_desc": "Integrated e-commerce solutions (WooCommerce, Shopify) to boost your sales.",
+        "gaming": "Game Development",
+        "gaming_desc": "Interactive and immersive game experiences for mobile and web.",
+        "cms": "CMS Solutions",
+        "cms_desc": "Custom CMS solutions (WordPress, Joomla) for easy content management.",
+        "bots": "Bot Development",
+        "bots_desc": "Smart chatbots for customer service and task automation."
+    }
+}
